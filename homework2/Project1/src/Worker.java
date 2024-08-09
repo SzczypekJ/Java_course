@@ -1,7 +1,9 @@
 public class Worker {
 
-    String name;
+    private String name;
 
+    // Constructor that initializes the Worker object with a specified name.
+    // If the provided name is null or empty, the name is set to "default".
     public Worker(String name) {
         if (name == null || name.length() < 1) {
             this.name = "default";
@@ -10,12 +12,22 @@ public class Worker {
             this.name = name;
         }
     }
-
+    // Default constructor that sets the Worker's name to "default".
     public Worker() {
-        this.name = "default"; // Przypisz domyślną nazwę
+        this.name = "default";
     }
 
+    // Method that simulates repairing a phone.
     public void repair(Phone phone) {
-        System.out.println("Phone " + phone.getModel() + " is being repaired.");
+        System.out.println("Phone " + phone.getModel() + " is being repaired by worker " + this.name );
+    }
+
+    // Below are setters and getters:
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

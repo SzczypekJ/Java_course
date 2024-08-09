@@ -1,15 +1,21 @@
 public class Phone {
+    private String model;
 
-    String model;
-
+    // Create an object of class Display
     private Display display;
+
+    // Create an object of class NetworkOperator
+    private NetworkOperator netOperator;
 
     private int number;
 
+    // Constructor of the Phone class
     public Phone(String model, int number) {
         this.model = model;
         this.number = number;
     }
+
+    // Below are setters and getters:
     public String getModel() {
         return model;
     }
@@ -32,5 +38,13 @@ public class Phone {
 
     public void setNumber(int number) {
         this.number = number;
+    }
+
+    public NetworkOperator getNetOperator() {
+        return netOperator;
+    }
+
+    public void setNetOperator(NetworkOperator netOperator) {
+        this.netOperator = netOperator;
     }
 }
