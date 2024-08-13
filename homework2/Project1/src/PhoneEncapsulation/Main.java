@@ -1,18 +1,20 @@
+package PhoneEncapsulation;
+
 public class Main {
     public static void main(String[] args) {
-        // Create a new Phone object representing an iPhone 15 with a specific phone number
+        // Create a new PhoneEncapsulation.Phone object representing an iPhone 15 with a specific phone number
         Phone iphone = new Phone("Iphone 15", 676_888_555);
 
-        // Create a new Customer object representing Michal Kowalski, age 30
+        // Create a new PhoneEncapsulation.Customer object representing Michal Kowalski, age 30
         Customer Michal = new Customer("Michal", "Kowalski", 30);
 
-        // Create a new Worker object representing a worker named Jakub
+        // Create a new PhoneEncapsulation.Worker object representing a worker named Jakub
         Worker worker = new Worker("Jakub");
 
-        // Create a new Display object with a resolution of 1024x768
+        // Create a new PhoneEncapsulation.Display object with a resolution of 1024x768
         Display display = new Display(1024, 768);
 
-        // Create a new NetworkOperator object representing the T-mobile operator
+        // Create a new PhoneEncapsulation.NetworkOperator object representing the T-mobile operator
         NetworkOperator networkOperator = new NetworkOperator("T-mobile");
 
         // Michal buys the iPhone
@@ -31,7 +33,7 @@ public class Main {
         System.out.println(worker.getName());
 
         // Print the phone number of the iPhone
-        System.out.println("Phone number: " + iphone.getNumber());
+        System.out.println("PhoneEncapsulation.Phone number: " + iphone.getNumber());
 
         // Print the network operator name for the iPhone
         System.out.println("Network operator: " + iphone.getNetOperator());

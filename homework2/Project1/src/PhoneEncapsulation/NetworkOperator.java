@@ -1,7 +1,9 @@
+package PhoneEncapsulation;
+
 public class NetworkOperator {
     private String networkName;
 
-    // Constructor of the NetworkOperator class
+    // Constructor of the PhoneEncapsulation.NetworkOperator class
     public NetworkOperator(String networkName) {
         this.networkName = networkName;
     }
@@ -21,7 +23,7 @@ public class NetworkOperator {
     }
 
     // An example of method overriding. By overriding the toString() method,
-    // we can customize the string representation of the NetworkOperator object
+    // we can customize the string representation of the PhoneEncapsulation.NetworkOperator object
     // to return the name of the network operator instead of the default object representation.
     @Override
     public String toString() {

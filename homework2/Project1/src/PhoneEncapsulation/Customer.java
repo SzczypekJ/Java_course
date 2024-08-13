@@ -1,12 +1,14 @@
+package PhoneEncapsulation;
+
 public class Customer {
     private String firstName;
     private String lastName;
     private int age;
 
-    // Create an object of class Phone
+    // Create an object of class PhoneEncapsulation.Phone
     private Phone phone;
 
-    // Constructor of the Customer class
+    // Constructor of the PhoneEncapsulation.Customer class
     public Customer(String firstName, String lastName, int age) {
         this.firstName = firstName;
         this.lastName = lastName;
@@ -16,7 +18,7 @@ public class Customer {
     // Method which allows us to buy a phone
     public void buyPhone(Phone phone) {
         this.phone = phone;
-        System.out.println("Customer " + this.firstName + " " + this.lastName + " has been bought " + phone.getModel());
+        System.out.println("PhoneEncapsulation.Customer " + this.firstName + " " + this.lastName + " has been bought " + phone.getModel());
     }
 
     // Method which allows us to make a call
@@ -68,5 +70,15 @@ public class Customer {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", age=" + age +
+                ", phone=" + phone +
+                '}';
     }
 }

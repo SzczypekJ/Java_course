@@ -1,15 +1,17 @@
+package PhoneEncapsulation;
+
 public class Phone {
     private String model;
 
-    // Create an object of class Display
+    // Create an object of class PhoneEncapsulation.Display
     private Display display;
 
-    // Create an object of class NetworkOperator
+    // Create an object of class PhoneEncapsulation.NetworkOperator
     private NetworkOperator netOperator;
 
     private int number;
 
-    // Constructor of the Phone class
+    // Constructor of the PhoneEncapsulation.Phone class
     public Phone(String model, int number) {
         this.model = model;
         this.number = number;
@@ -46,5 +48,15 @@ public class Phone {
 
     public void setNetOperator(NetworkOperator netOperator) {
         this.netOperator = netOperator;
+    }
+
+    @Override
+    public String toString() {
+        return "Phone{" +
+                "model='" + model + '\'' +
+                ", display=" + display +
+                ", netOperator=" + netOperator +
+                ", number=" + number +
+                '}';
     }
 }
