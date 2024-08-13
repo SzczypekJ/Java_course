@@ -49,12 +49,20 @@ public abstract class ElectronicDevices {
         this.color = color;
     }
 
-    public String getBrand() { // Getter for brand
+    public String getBrand() {
         return brand;
     }
 
-    public void setBrand(String brand) { // Setter for brand
+    public void setBrand(String brand) {
         this.brand = brand;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
+
+    public String getColor() {
+        return color;
     }
 
     @Override
