@@ -8,21 +8,27 @@ public class Main {
             FinalPhoneSamsung phone1 = new FinalPhoneSamsung("Galaxy S21", 123456);
             System.out.println(FinalPhoneSamsung.numberOfOccurances);
             System.out.println(FinalPhoneSamsung.MAX_NUMBER_OF_PHONES);
+
             FinalPhoneSamsung phone2 = new FinalPhoneSamsung("Galaxy S21", 123457);
             System.out.println(FinalPhoneSamsung.numberOfOccurances);
             System.out.println(FinalPhoneSamsung.MAX_NUMBER_OF_PHONES);
+
             FinalPhoneSamsung phone3 = new FinalPhoneSamsung("Galaxy S21", 123458);
             System.out.println(FinalPhoneSamsung.numberOfOccurances);
             System.out.println(FinalPhoneSamsung.MAX_NUMBER_OF_PHONES);
+
             FinalPhoneSamsung phone4 = new FinalPhoneSamsung("Galaxy S21", 123459);
             System.out.println(FinalPhoneSamsung.numberOfOccurances);
             System.out.println(FinalPhoneSamsung.MAX_NUMBER_OF_PHONES);
+
             FinalPhoneSamsung phone5 = new FinalPhoneSamsung("Galaxy S21", 123460);
             System.out.println(FinalPhoneSamsung.numberOfOccurances);
             System.out.println(FinalPhoneSamsung.MAX_NUMBER_OF_PHONES);
+
             FinalPhoneSamsung phone6 = new FinalPhoneSamsung("Galaxy S21", 123461);
             System.out.println(FinalPhoneSamsung.numberOfOccurances);
             System.out.println(FinalPhoneSamsung.MAX_NUMBER_OF_PHONES);
+            
             phone1.tellAboutYourself();
             phone1.finalMethod();
 
