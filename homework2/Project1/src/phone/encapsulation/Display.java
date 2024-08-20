@@ -1,4 +1,4 @@
-package PhoneEncapsulation;
+package phone.encapsulation;
 
 public class Display {
     private int screenHeight;

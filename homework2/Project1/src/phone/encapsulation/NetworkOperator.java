@@ -1,4 +1,4 @@
-package PhoneEncapsulation;
+package phone.encapsulation;
 
 public class NetworkOperator {
     private String networkName;

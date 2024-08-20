@@ -1,9 +1,10 @@
-package Inheritance;
-import PhoneEncapsulation.*;
+package inheritance;
+import phone.encapsulation.Display;
+import interfaces.*;
 
 import java.util.Objects;
 
-public class Computer extends ElectronicDevices {
+public class Computer extends ElectronicDevices implements Callable, MusicListener, Playable, SocialMediaAccess, Watchable{
     private Display display;
 
     public Computer(String device) {
@@ -92,4 +93,33 @@ public class Computer extends ElectronicDevices {
         System.out.println("Display: " + (display != null ? display.toString() : "No display set"));
     }
 
+    @Override
+    public void callToSomeone() {
+        System.out.println("I am a Computer and I can call to someone by Teams");
+    }
+
+    @Override
+    public void listenMusic() {
+        System.out.println("I am Computer and I can listen the music");
+    }
+
+    @Override
+    public void playingGames() {
+        System.out.println("I am Computer and I can play games");
+    }
+
+    @Override
+    public void socialMediaAccess() {
+        System.out.println("I am Computer and I can access social media");
+    }
+
+    @Override
+    public void watchSmth() {
+        System.out.println("I am Computer and I can watch the movie");
+    }
+
+    @Override
+    public void tellSmth() {
+        System.out.println("I am Computer and I can play video games and do a lot of things.");
+    }
 }

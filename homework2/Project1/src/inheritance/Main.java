@@ -1,6 +1,10 @@
-package Inheritance;
+package inheritance;
 
-import PhoneEncapsulation.*;
+import interfaces.Callable;
+import interfaces.Watchable;
+import phone.encapsulation.*;
+import phone.encapsulation.Display;
+import phone.encapsulation.NetworkOperator;
 
 public class Main {
 
@@ -93,6 +97,55 @@ public class Main {
         displayAllDeviceInfo(tablet);
         displayAllDeviceInfo(tv1);
         displayAllDeviceInfo(tablet1);
+
+
+        // Testing the interfaces !!!!!!!!!!!!
+        TV newTVInterface = new TV("New TV with interface");
+        newTVInterface.setColor("red");
+        newTVInterface.setBrand("Apple");
+        newTVInterface.calculatePrice();
+        System.out.println(newTVInterface);
+        displayAllDeviceInfo(newTVInterface);
+
+        // Checking the interfaces methods
+        newTVInterface.listenMusic();
+        newTVInterface.watchSmth();
+        newTVInterface.WhatICanDoMusic();
+        newTVInterface.WhatICanDoWatch();
+
+        Computer newComputerInterface = new Computer("New Computer");
+        newComputerInterface.setColor("red");
+        newComputerInterface.setBrand("Apple");
+        newComputerInterface.calculatePrice();
+        System.out.println(newComputerInterface);
+        displayAllDeviceInfo(newComputerInterface);
+
+        // Checking the interfaces methods
+        newComputerInterface.listenMusic();
+        newComputerInterface.watchSmth();
+        newComputerInterface.callToSomeone();
+        newComputerInterface.playingGames();
+        newComputerInterface.socialMediaAccess();
+
+        newComputerInterface.WhatICanDoMusic();
+        newComputerInterface.WhatICanDoWatch();
+        newComputerInterface.WhatICanDoCall();
+        newComputerInterface.WhatICanDoPlay();
+        newComputerInterface.WhatICanDoSocial();
+
+        System.out.println("If the newTVInterface is equal to tv2? " + newTVInterface.equals(tv2));
+        System.out.println("If the tv and tv2 have the same hash code? " + (newTVInterface.hashCode() == tv2.hashCode()));
+
+        // Testing the polymorphism in the interface
+        Watchable watchable1 = new Computer("New Computer");
+        Watchable watchable2 = new TV("New TV");
+        Watchable watchable3 = new Tablet("New Tablet");
+        Watchable watchable4 = new Iphone(123456789);
+
+        tellSmthAboutYou(watchable1);
+        tellSmthAboutYou(watchable2);
+        tellSmthAboutYou(watchable3);
+        tellSmthAboutYou(watchable4);
     }
 
     // Polymorphism example: this method can accept any ElectronicDevices object
@@ -104,5 +157,10 @@ public class Main {
     // Use polymorphism to display device info
     public static void displayAllDeviceInfo(ElectronicDevices device) {
         device.displayDeviceInfo();
+    }
+
+    // Use polymorphism for interface
+    public static void tellSmthAboutYou(Watchable watchable) {
+        watchable.tellSmth();
     }
 }

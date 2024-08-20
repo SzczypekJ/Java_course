@@ -1,17 +1,21 @@
-package Inheritance;
-import PhoneEncapsulation.*;
+package inheritance;
+import interfaces.*;
+import phone.encapsulation.Display;
 
 import java.util.Objects;
 
-public class Tablet extends ElectronicDevices {
+// TV cant play video games, have access to social media and call to someone
+// so this class dont implements this methods
+public class TV extends ElectronicDevices implements MusicListener, Watchable{
     private Display display;
 
-    public Tablet(String device) {
+    public TV(String device) {
         super(device);
     }
 
-    public Tablet(String device, int insuranceYears) {
-        super(device, insuranceYears);
+    @Override
+    public void saySmth() {
+        System.out.println("TV says: " + this.device + ". I override the abstract class.");
     }
 
     @Override
@@ -31,14 +35,14 @@ public class Tablet extends ElectronicDevices {
         }
         if (brand != null) {
             switch (brand.toLowerCase()) {
-                case "apple":
-                    basePrice += 600;
-                    break;
                 case "samsung":
-                    basePrice += 400;
-                    break;
-                case "lenovo":
                     basePrice += 300;
+                    break;
+                case "lg":
+                    basePrice += 200;
+                    break;
+                case "sony":
+                    basePrice += 400;
                     break;
                 default:
                     basePrice += 100;
@@ -48,8 +52,15 @@ public class Tablet extends ElectronicDevices {
     }
 
     @Override
-    public void saySmth() {
-        System.out.println("Tablet says: " + this.device + ". I override the abstract class.");
+    public String toString() {
+        return "TV{" +
+                "display=" + display +
+                ", device='" + device + '\'' +
+                ", insuranceYears=" + insuranceYears +
+                ", price=" + price +
+                ", color='" + color + '\'' +
+                ", brand='" + brand + '\'' +
+                '}';
     }
 
     public Display getDisplay() {
@@ -65,8 +76,8 @@ public class Tablet extends ElectronicDevices {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
-        Tablet tablet = (Tablet) o;
-        return Objects.equals(display, tablet.display);
+        TV tv = (TV) o;
+        return Objects.equals(display, tv.display);
     }
 
     @Override
@@ -75,24 +86,27 @@ public class Tablet extends ElectronicDevices {
     }
 
     @Override
-    public String toString() {
-        return "Tablet{" +
-                "display=" + display +
-                ", device='" + device + '\'' +
-                ", insuranceYears=" + insuranceYears +
-                ", price=" + price +
-                ", color='" + color + '\'' +
-                ", brand='" + brand + '\'' +
-                '}';
-    }
-
-    @Override
     public void displayDeviceInfo() {
-        System.out.println("Tablet Details: ");
+        System.out.println("TV Details: ");
         System.out.println("Device: " + device);
         System.out.println("Color: " + color);
         System.out.println("Brand: " + brand);
         System.out.println("Price: " + price);
         System.out.println("Display: " + (display != null ? display.toString() : "No display set"));
+    }
+
+    @Override
+    public void listenMusic() {
+        System.out.println("I am TV and I can listen the music");
+    }
+
+    @Override
+    public void watchSmth() {
+        System.out.println("I am TV and I can watch some movie");
+    }
+
+    @Override
+    public void tellSmth() {
+        System.out.println("I am TV and I can watch a movie and do a lot of things.");
     }
 }
