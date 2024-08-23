@@ -28,7 +28,7 @@ public class Main {
             FinalPhoneSamsung phone6 = new FinalPhoneSamsung("Galaxy S21", 123461);
             System.out.println(FinalPhoneSamsung.numberOfOccurances);
             System.out.println(FinalPhoneSamsung.MAX_NUMBER_OF_PHONES);
-            
+
             phone1.tellAboutYourself();
             phone1.finalMethod();
 
