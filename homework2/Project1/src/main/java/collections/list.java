@@ -220,7 +220,7 @@ public class list<T> {
 
     // Method
     // To display the LinkedList
-    // @Override
+    @Override
     public String toString()
     {
 
