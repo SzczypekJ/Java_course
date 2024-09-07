@@ -1,0 +1,1 @@
+{Jakub=5, Kacper=3, Michal=3, Pawel=2, Ewa=4}
