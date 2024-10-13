@@ -1,0 +1,20 @@
+<cars>
+    <car id="1">
+        <model>Audi</model>
+        <age>18</age>
+        <makeYear>2005</makeYear>
+        <color>Red</color>
+        <owner>
+            <name>John Doe</name>
+        </owner>
+    </car>
+    <car id="2">
+        <model>BMW</model>
+        <age>1</age>
+        <makeYear>2023</makeYear>
+        <color>Blue</color>
+        <owner>
+            <name>Jane Smith</name>
+        </owner>
+    </car>
+</cars>
