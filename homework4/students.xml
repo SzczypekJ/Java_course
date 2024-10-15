@@ -1,0 +1,28 @@
+<students>
+    <student id = "1">
+        <name>Ivan</name>
+        <age>18</age>
+        <car>
+            <model>Audi</model>
+            <year>2020</year>
+        </car>
+        <animal>
+            <type>Cat</type>
+            <name>Mruczek</name>
+        </animal>
+        <date>15/października/2024</date>
+    </student>
+    <student id = "2">
+        <name>Anna</name>
+        <age>20</age>
+        <car>
+            <model>Opel</model>
+            <year>2022</year>
+        </car>
+        <animal>
+            <type>Dog</type>
+            <name>Rufus</name>
+        </animal>
+        <date>15/października/2024</date>
+    </student>
+</students>

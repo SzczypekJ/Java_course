@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<students>
+    <student id="3">
+        <name>Ivan</name>
+        <age>30</age>
+        <car>
+            <model>Renault</model>
+            <year>2015</year>
+        </car>
+        <animal>
+            <type>Cat</type>
+            <name>Miauuu</name>
+        </animal>
+        <date>15/października/2024</date>
+    </student>
+    <student id="4">
+        <name>Anna</name>
+        <age>20</age>
+        <car>
+            <model>Mazda</model>
+            <year>2024</year>
+        </car>
+        <animal>
+            <type>Dog</type>
+            <name>Woff</name>
+        </animal>
+        <date>15/października/2024</date>
+    </student>
+</students>
