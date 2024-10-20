@@ -1,0 +1,43 @@
+[{
+  "name" : "Kuba",
+  "age" : 23,
+  "car" : {
+    "model" : "BMW",
+    "year" : 2024
+  },
+  "animal" : {
+    "type" : "Dog",
+    "name" : "Doggo"
+  },
+  "date" : "20/10/2024",
+  "computer" : {
+    "model" : "Asus",
+    "year" : 2020
+  },
+  "phone" : {
+    "model" : "Apple",
+    "year" : 2023
+  }
+},
+  {
+    "name" : "John",
+    "age" : 35,
+    "car" : {
+      "model" : "Audi",
+      "year" : 2023
+    },
+    "animal" : {
+      "type" : "snake",
+      "name" : "snake"
+    },
+    "date" : "15/10/2024",
+    "computer" : {
+      "model" : "Acer",
+      "year" : 2015
+    },
+    "phone" : {
+      "model" : "Samsung",
+      "year" : 2022
+    }
+  }
+]
