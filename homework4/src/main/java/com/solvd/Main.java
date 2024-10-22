@@ -4,8 +4,10 @@ import com.solvd.dao.ICarDao;
 import com.solvd.dao.IStudentDao;
 import com.solvd.dao.jdbc.CarDao;
 import com.solvd.dao.jdbc.StudentDao;
+import com.solvd.dao.mybatis.StudentDAO;
 import com.solvd.model.Car;
 import com.solvd.model.Student;
+import com.solvd.service.StudentService;
 
 public class Main {
     public static void main(String[] args) {
@@ -60,5 +62,14 @@ public class Main {
 //        car.setStudentId(1);
 //        cardDao.update(3, car);
 
+        // Interface
+        IStudentDao StudentDao = StudentService.getStudentSelect();
+        Student student = StudentDao.getEntityById(2);
+        System.out.println(student);
+
+        // XML
+//        StudentDAO studentDAO = new StudentDAO();
+//        Student student = studentDAO.getEntityById(2);
+//        System.out.println(student);
     }
 }

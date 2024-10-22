@@ -2,6 +2,7 @@ package com.solvd.model;
 
 public class Student {
 
+    private transient int studentId;
     private String firstName;
     private String lastName;
     private String email;
