@@ -14,6 +14,7 @@ public class Main {
         ISubtract sub = (x, y) -> x - y;
         System.out.println("Result of SUBSTRACT 5 and 5 is: " + sub.subtract(5, 5));
         int c = sub.subtract(3, 5);
+
         System.out.println("Result of SUBSTRACT 3 and 5 is: " + c);
 
         // Testng IMultiply with lambda
