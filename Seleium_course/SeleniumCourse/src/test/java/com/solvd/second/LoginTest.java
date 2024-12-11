@@ -26,18 +26,21 @@ public class LoginTest {
                 WebDriverManager.chromedriver().setup();
                 // Tworzenie instancji WebDrivera dla Chrome.
                 driver = new ChromeDriver();
+                driver.manage().window().maximize();
                 break;
             case "firefox":
                 // Automatyczna konfiguracja sterownika Firefox za pomocą WebDriverManager.
                 WebDriverManager.firefoxdriver().setup();
                 // Tworzenie instancji WebDrivera dla Firefox.
                 driver = new FirefoxDriver();
+                driver.manage().window().maximize();
                 break;
             case "edge":
                 // Automatyczna konfiguracja sterownika Edge za pomocą WebDriverManager.
                 WebDriverManager.edgedriver().setup();
                 // Tworzenie instancji WebDrivera dla Edge.
                 driver = new EdgeDriver();
+                driver.manage().window().maximize();
                 break;
         }
 
