@@ -1,4 +1,4 @@
-package com.solvd;
+package com.solvd.lambdas;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,6 +1,5 @@
-package com.solvd;
+package com.solvd.lambdas;
 
-import java.util.Comparator;
 import java.util.Set;
 import java.util.TreeSet;
 

@@ -1,8 +1,6 @@
-package com.solvd;
+package com.solvd.lambdas;
 
 import lombok.*;
-
-import java.util.Objects;
 
 @Getter
 @Setter
