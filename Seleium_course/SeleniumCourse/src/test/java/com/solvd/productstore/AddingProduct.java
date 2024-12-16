@@ -9,9 +9,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 
 public class AddingProduct {
+    public static WebDriver driver;
+    public static String price; // Zmienna do przechowywania ceny produktu
+    public static String nameOfProduct; // Zmienna do przechowywania nazwy produktu
+
     public static void main(String[] args) throws InterruptedException {
         WebDriverManager.chromedriver().setup();
-        WebDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
 
         // Opening the website
@@ -21,12 +25,12 @@ public class AddingProduct {
         // Click on some product
         WebElement nexus = driver.findElement(By.xpath("//a[@href='prod.html?idp_=3' and @class='hrefch']"));
         // Get product name
-        String nameOfProduct = nexus.getText();
+        nameOfProduct = nexus.getText();
         nexus.click();
         Thread.sleep(2000);
 
         // Getting the price of the product
-        String price = driver.findElement(By.xpath("//h3[@class='price-container']")).getText();
+        price = driver.findElement(By.xpath("//h3[@class='price-container']")).getText();
 
         // Click on Add to cart
         driver.findElement(By.xpath("//a[@onclick='addToCart(3)']")).click();
@@ -54,7 +58,8 @@ public class AddingProduct {
         System.out.println("Test passed: Product name and price are correct in the cart.");
 
 
-        driver.close();
+        // We should use it, but I want to reuse this code in PurchaseProduct class
+//        driver.close();
 
     }
 }
