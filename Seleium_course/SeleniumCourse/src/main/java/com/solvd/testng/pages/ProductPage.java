@@ -36,4 +36,8 @@ public class ProductPage {
     public void goToCart() {
         cartButton.click();
     }
+
+    public WebElement getProductPriceElement() {
+        return priceContainer;
+    }
 }

@@ -1,10 +1,12 @@
 package com.solvd.testng.pages;
 
+import lombok.Getter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+@Getter
 public class LoginPage {
 
     private WebDriver driver;
@@ -41,5 +43,13 @@ public class LoginPage {
 
     public String getWelcomeText() {
         return welcomeText.getText();
+    }
+
+    public WebElement getWelcomeTextElement() {
+        return welcomeText;
+    }
+
+    public void open() {
+        driver.get("https://www.demoblaze.com/index.html");
     }
 }

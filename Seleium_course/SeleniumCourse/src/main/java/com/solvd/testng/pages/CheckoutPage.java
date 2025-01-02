@@ -1,10 +1,12 @@
 package com.solvd.testng.pages;
 
+import lombok.Getter;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+@Getter
 public class CheckoutPage {
 
     private WebDriver driver;
@@ -33,6 +35,9 @@ public class CheckoutPage {
     @FindBy(css = "p.lead.text-muted")
     private WebElement purchaseDetails;
 
+    @FindBy(xpath = "//button[@class='confirm btn btn-lg btn-primary']")
+    private WebElement confirmButton;
+
     public CheckoutPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -53,5 +58,13 @@ public class CheckoutPage {
 
     public String getPurchaseDetails() {
         return purchaseDetails.getText();
+    }
+
+    public WebElement getPurchaseDetailsElement() {
+        return purchaseDetails;
+    }
+
+    public void confirmPurchase() {
+    	confirmButton.click();
     }
 }
