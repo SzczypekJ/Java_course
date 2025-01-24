@@ -86,8 +86,10 @@ public class ProductStoreTest {
         allProductsPage = new AllProductsPage(driver);
         productPage = new ProductPage(driver);
         cartPage = new CartPage(driver);
+        loginPage = new LoginPage(driver);
 
-        driver.get("https://www.demoblaze.com/index.html");
+        loginPage.open();
+
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         wait.until(ExpectedConditions.visibilityOf(allProductsPage.getLogoutButton()));
