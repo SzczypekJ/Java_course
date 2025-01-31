@@ -1,13 +1,16 @@
 package com.solvd.jaxb;
 
-import jakarta.xml.bind.annotation.XmlAttribute;
-import jakarta.xml.bind.annotation.XmlElement;
-import jakarta.xml.bind.annotation.XmlType;
-import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+//import jakarta.xml.bind.annotation.XmlAttribute;
+//import jakarta.xml.bind.annotation.XmlElement;
+//import jakarta.xml.bind.annotation.XmlType;
+//import jakarta.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+//
+//import java.util.Date;
 
 import java.util.Date;
 
-@XmlType(propOrder = { "id", "name", "age", "car", "animal", "date" })
+//@XmlType(propOrder = { "id", "name", "age", "car", "animal", "date" })
+@XmlType
 public class Student {
 
     private String name;
