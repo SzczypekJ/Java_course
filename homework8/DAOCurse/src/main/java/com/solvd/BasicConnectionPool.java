@@ -20,7 +20,7 @@ public class BasicConnectionPool {
 
         ResourceBundle resourceBundle = ResourceBundle.getBundle("database");
         String url = resourceBundle.getString("url");
-        String user = resourceBundle.getString("user");
+        String user = resourceBundle.getString("username");
         String password = resourceBundle.getString("password");
 
         connectionPool = new ArrayList<>(INITIAL_POOL_SIZE);
