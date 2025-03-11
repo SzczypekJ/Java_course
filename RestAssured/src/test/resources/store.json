@@ -1,0 +1,41 @@
+{
+  "store": {
+    "books": [
+      {
+        "title": "Clean Code",
+        "author": "Robert C. Martin",
+        "category": "Programming",
+        "isbn": "9780132350884",
+        "price": 159.99
+      },
+      {
+        "title": "The Pragmatic Programmer",
+        "author": "Andrew Hunt, David Thomas",
+        "category": "Programming",
+        "isbn": "9780135957059",
+        "price": 189.99
+      },
+      {
+        "title": "Atomic Habits",
+        "author": "James Clear",
+        "category": "Self-Development",
+        "isbn": "9780735211292",
+        "price": 99.99
+      },
+      {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "category": "Fiction",
+        "isbn": "9780743273565",
+        "price": 49.99
+      },
+      {
+        "title": "Sapiens: A Brief History of Humankind",
+        "author": "Yuval Noah Harari",
+        "category": "History",
+        "isbn": "9780062316097",
+        "price": 129.99
+      }
+    ]
+  }
+}

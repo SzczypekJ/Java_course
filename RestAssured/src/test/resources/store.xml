@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<store>
+    <books>
+        <book>
+            <title>Clean Code</title>
+            <author>Robert C. Martin</author>
+            <category>Programming</category>
+            <isbn>9780132350884</isbn>
+            <price>159.99</price>
+        </book>
+        <book>
+            <title>The Pragmatic Programmer</title>
+            <author>Andrew Hunt, David Thomas</author>
+            <category>Programming</category>
+            <isbn>9780135957059</isbn>
+            <price>189.99</price>
+        </book>
+        <book>
+            <title>Atomic Habits</title>
+            <author>James Clear</author>
+            <category>Self-Development</category>
+            <isbn>9780735211292</isbn>
+            <price>99.99</price>
+        </book>
+        <book>
+            <title>The Great Gatsby</title>
+            <author>F. Scott Fitzgerald</author>
+            <category>Fiction</category>
+            <isbn>9780743273565</isbn>
+            <price>49.99</price>
+        </book>
+        <book>
+            <title>Sapiens: A Brief History of Humankind</title>
+            <author>Yuval Noah Harari</author>
+            <category>History</category>
+            <isbn>9780062316097</isbn>
+            <price>129.99</price>
+        </book>
+    </books>
+</store>

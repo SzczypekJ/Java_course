@@ -34,7 +34,7 @@ public class DemoAutomation {
         searchBox.sendKeys("mobile");
 
         // Znalezienie przycisku wyszukiwania na stronie (po ID "gh-btn") i kliknięcie go.
-        WebElement searchButton = driver.findElement(By.id("gh-btn"));
+        WebElement searchButton = driver.findElement(By.id("gh-search-btn"));
         searchButton.click();
 
         // Dodanie opóźnienia, aby można było zobaczyć wynik akcji przed zamknięciem przeglądarki.
@@ -44,4 +44,4 @@ public class DemoAutomation {
         // Zamknięcie okna przeglądarki. Metoda close() zamyka tylko bieżące okno.
         driver.close();
     }
-}
+} 

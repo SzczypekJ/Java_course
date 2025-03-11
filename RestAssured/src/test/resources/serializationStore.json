@@ -1,0 +1,20 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Clean Code",
+      "author": "Robert C. Martin",
+      "category": "Programming",
+      "isbn": "9780132350884",
+      "price": 159.99
+    },
+    {
+      "id": null,
+      "title": "Effective Java",
+      "author": "Joshua Bloch",
+      "category": "Programming",
+      "isbn": "9780134685991",
+      "price": 199.99
+    }
+  ]
+}

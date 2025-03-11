@@ -1,0 +1,35 @@
+{
+  "id": 51,
+  "userId": ${userId},
+  "products": [
+    <#if product1_id?? && product1_quantity??>
+    {
+      "id": ${product1_id},
+      "title": "Rolex Submariner Watch",
+      "quantity": ${product1_quantity},
+      "total": 55999.96,
+      "price" : 13999.99,
+      "discountPercentage": 0.82,
+      "discountedPrice": 55541,
+      "thumbnail": "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Submariner%20Watch/thumbnail.png"
+    }<#if product2_id?? && product2_quantity??>,</#if>
+    </#if>
+
+    <#if product2_id?? && product2_quantity??>
+    {
+      "id": ${product2_id},
+      "title": "Cricket Helmet",
+      "quantity": ${product2_quantity},
+      "price": 44.99,
+      "total": 44.99,
+      "discountPercentage": 10.75,
+      "discountedPrice": 40,
+      "thumbnail": "https://cdn.dummyjson.com/products/images/sports-accessories/Cricket%20Helmet/thumbnail.png"
+    }
+    </#if>
+  ],
+  "total": 56044.95,
+  "discountedTotal": 55581,
+  "totalProducts": 2,
+  "totalQuantity": 5
+}

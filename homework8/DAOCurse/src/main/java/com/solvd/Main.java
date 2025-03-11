@@ -157,5 +157,15 @@ public class Main
         List<Library> libraries3 = libraryService.getAllLibraries();
         System.out.println("List of libraries:");
         libraries3.forEach(System.out::println);
+
+
+        String point = "5, 10";
+        Integer point1X = 5;
+        Integer point1Y = 10;
+
+        Integer point2X = 3;
+        Integer point2Y = -6;
+
+
     }
 }

@@ -1,0 +1,52 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Jacob Smith",
+      "location": "Warsaw",
+      "phone": "+48 600 123 456",
+      "courses": [
+        "Mathematics",
+        "Physics",
+        "Programming"
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Anna Johnson",
+      "location": "Krakow",
+      "phone": "+48 601 987 654",
+      "courses": [
+        "Biology",
+        "Chemistry",
+        "English Language"
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Peter Williams",
+      "location": "Gdansk",
+      "phone": "+48 602 456 789",
+      "courses": [
+        "History",
+        "Geography",
+        "Art"
+      ]
+    },
+    {
+      "id": "ccdc",
+      "empty": false,
+      "mapType": "java.util.HashMap"
+    },
+    {
+      "id": "d8d1",
+      "empty": false,
+      "mapType": "java.util.HashMap"
+    },
+    {
+      "id": "61c0",
+      "empty": false,
+      "mapType": "java.util.HashMap"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": "d0a0",
+      "gender": "Male",
+      "name": "Tom Miller",
+      "email": "william.ruecker@yahoo.com",
+      "status": "inactive"
+    }
+  ]
+}

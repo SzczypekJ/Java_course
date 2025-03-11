@@ -1,0 +1,22 @@
+{
+  "id": 1,
+  "userId": ${userId},
+"products": [
+<#if product1_id?? && product1_quantity??>
+{
+"id": ${product1_id},
+"title": "Rolex Submariner Watch",
+"quantity": ${product1_quantity},
+"total": 461999.67,
+"price": 13999.99,
+"discountPercentage": 0.82,
+"discountedPrice": 458211,
+"thumbnail": "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Submariner%20Watch/thumbnail.png"
+}
+</#if>
+],
+"total": 461999.67,
+"discountedTotal": 458211,
+"totalProducts": 1,
+"totalQuantity": ${product1_quantity}
+}

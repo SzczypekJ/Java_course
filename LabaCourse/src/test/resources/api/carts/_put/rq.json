@@ -1,0 +1,12 @@
+{
+  "userId": ${userId},
+"merge": false,
+"products": [
+<#if product1_id?? && product1_quantity??>
+{
+"id": ${product1_id},
+"quantity": ${product1_quantity}
+}
+</#if>
+]
+}
